@@ -19,9 +19,17 @@
       </div>
 
       <div class="search" role="search" aria-label="Buscar en la página">
-        <input id="searchBox" type="search" placeholder="Buscar en esta página… (Ctrl/⌘ + K)" autocomplete="off"/>
+        <input id="searchBox" type="search" placeholder="Buscar en esta página…" autocomplete="off"/>
       </div>
-    
+
+  <div class="actions">
+        <button class="btn" id="clearSearch" title="Limpiar búsqueda">Limpiar</button>
+        <button class="btn primary" id="printPage" title="Imprimir / Guardar PDF">Imprimir</button>
+      </div>
+    </div>
+    <div class="topbar-inner" style="padding-top:0; padding-bottom:12px;">
+      <small class="muted">Resultado: <span id="searchCount"></span> · Vigencia 01/03/2026</small>
+    </div>
   </header>
 
   <div class="shell">
