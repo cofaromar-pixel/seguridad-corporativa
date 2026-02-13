@@ -18,31 +18,28 @@
         </div>
       </div>
 
-      <div class="search" role="search" aria-label="Buscar en la página">
-        <input id="searchBox" type="search" placeholder="Buscar en esta página…" autocomplete="off"/>
-      </div>
-
-  <div class="actions">
-        <button class="btn" id="clearSearch" title="Limpiar búsqueda">Limpiar</button>
-        <button class="btn primary" id="printPage" title="Imprimir / Guardar PDF">Imprimir</button>
+      <div class="actions">
+        <button class="btn primary" id="printPage" title="Imprimir / Guardar PDF">
+          Imprimir
+        </button>
       </div>
     </div>
     <div class="topbar-inner" style="padding-top:0; padding-bottom:12px;">
-      <small class="muted">Resultado: <span id="searchCount"></span> · Vigencia 01/03/2026</small>
+      <small class="muted">Vigencia 01/03/2026 ·</small>
     </div>
   </header>
 
   <div class="shell">
     <aside class="sidebar">
-      <div class="nav-title"><span>Menú</span><span class="muted kbd">Ctrl/⌘+K</span></div>
+      <div class="nav-title"><span>Menú</span></div>
       <nav class="nav" aria-label="Navegación principal">
         <a href='index.html'><span>Inicio</span><span class='pill'>1</span></a>
-<a href='manual.html'><span>Manual</span><span class='pill'>2</span></a>
-<a href='anexos.html'><span>Anexos</span><span class='pill'>3</span></a>
-<a href='videos.html'><span>Videos</span><span class='pill'>4</span></a>
-<a href='biblioteca.html'><span>Biblioteca</span><span class='pill'>5</span></a>
-<a href='cambios.html'><span>Control de cambios</span><span class='pill'>6</span></a>
-<a href='descargas.html'><span>Descargas</span><span class='pill'>7</span></a>
+        <a href='manual.html'><span>Manual</span><span class='pill'>2</span></a>
+        <a href='anexos.html'><span>Anexos</span><span class='pill'>3</span></a>
+        <a href='videos.html'><span>Videos</span><span class='pill'>4</span></a>
+        <a href='biblioteca.html'><span>Biblioteca</span><span class='pill'>5</span></a>
+        <a href='cambios.html'><span>Control de cambios</span><span class='pill'>6</span></a>
+        <a href='descargas.html'><span>Descargas</span><span class='pill'>7</span></a>
       </nav>
       <div class="note" style="margin-top:12px">
         <b>Tip</b>: este sitio es para consulta rápida. Para el documento original en PDF, ver “Descargas”.
@@ -53,7 +50,7 @@
       
 <section class="hero">
   <h2>Manual online del Guardia de Seguridad</h2>
-  <p>Versión digital para lectura ágil en guardia. Navegá por temas, y usá <span class="kbd">Imprimir</span> para guardar como PDF.</p>
+  <p>Versión digital para lectura ágil en guardia. Navegá por temas y usá <span class="kbd">Imprimir</span> para guardar como PDF.</p>
   <div class="meta">
     <div class="chip"><b>Código</b> · MN-D-03-GS</div>
     <div class="chip"><b>Versión</b> · 01</div>
@@ -67,7 +64,7 @@
   <ul>
     <li>Entrá a <a href="manual.html">Manual</a> para ver todos los temas en una sola vista con saltos rápidos.</li>
     <li>En <a href="videos.html">Videos</a> hay enlaces a búsquedas de capacitaciones básicas.</li>
-    <li>En <a href="biblioteca.html">Biblioteca</a> vas a encontrar materiales de formación (links externos y documentos online).</li>
+    <li>En <a href="biblioteca.html">Biblioteca</a> vas a poder colgar materiales de formación (links externos y documentos online).</li>
   </ul>
   <p class="note"><b>Importante</b>: el guardia no realiza requisas manuales ni contacto físico. Se usan medios de detección sin contacto y se escala cuando corresponda.</p>
 </div>
@@ -105,11 +102,16 @@
 </div>
 
       <div class="footer">
-        <div>© 2026 · SEGURIDAD CORPORATIVA · Uso interno</div>
+        <div>© 2026 · SEGURIDAD CORPORATIVA · Uso interno</div>       
       </div>
     </main>
   </div>
 
-  <script src="assets/app.js"></script>
+  <script>
+    document.getElementById("printPage").addEventListener("click", function() {
+      window.print();
+    });
+  </script>
+
 </body>
 </html>
